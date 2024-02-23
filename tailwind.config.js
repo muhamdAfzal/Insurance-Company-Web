@@ -8,6 +8,7 @@ export default {
         secondary: "#436850",
         tartiary: "#607274",
         green: "#43766C",
+        greenLite: "#85E6C5",
       },
     },
   },
