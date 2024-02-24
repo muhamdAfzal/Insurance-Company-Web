@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { CgMenuGridO, CgMenuGridR } from "react-icons/cg";
+import Button from "./Button";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="md:px-14 py-6 max-w-screen-2xl mx-auto text-primary">
+      <nav className="py-6 text-primary">
         <div className="text-base lg:text-2xl container mx-auto flex justify-between items-center">
           <div className="flex space-x-14 items-center">
             {/* Main Logo */}
@@ -31,7 +32,7 @@ const Navbar = () => {
             </a>
 
             {/* Navbar Menus */}
-            <ul className="md:flex space-x-6 lg:space-x-10 hidden">
+            <ul className="lg:flex space-x-6 lg:space-x-10 hidden">
               {navItems.map(({ link, path }) => (
                 <a
                   key={link}
@@ -45,14 +46,12 @@ const Navbar = () => {
           </div>
 
           {/* Button */}
-          <div className="hidden md:flex items-center">
-            <button className="py-3 px-6 text-white bg-green hover:bg-primary rounded transition-all duration-500">
-              Contact Us
-            </button>
+          <div className="hidden lg:flex">
+            <Button element={"Contact Us"} />
           </div>
 
           {/* Menu Burger Btn */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-primary focus:text-secondary"
@@ -71,13 +70,19 @@ const Navbar = () => {
       <div
         className={`${
           !isMenuOpen ? "hidden" : "flex"
-        } md:hidden flex-col space-y-7 text-xl text-white bg-primary px-16 py-10`}
+        } lg:hidden flex-col gap-10 text-xl text-white bg-primary px-16 py-20 transition-all duration-500`}
       >
-        {navItems.map(({ link, path }) => (
-          <a key={link} href={path} className="block">
-            {link}
-          </a>
-        ))}
+        <div className="flex flex-col space-y-7">
+          {navItems.map(({ link, path }) => (
+            <a key={link} href={path} className="">
+              {link}
+            </a>
+          ))}
+        </div>
+
+        <div className="lg:hidden">
+          <Button element={"Contact Us"} />
+        </div>
       </div>
     </>
   );
