@@ -24,7 +24,7 @@ const About = () => {
         <img
           src={about2}
           alt=""
-          className="hidden md:flex md:absolute z-20 md:-bottom-10 md:-right-10 xl:-bottom-28 xl:-right-16 rounded-xl max-w-[220px] lg:max-w-[235px] xl:max-w-full"
+          className="hidden md:flex md:absolute z-20 md:-bottom-10 md:-right-10 xl:-bottom-20 xl:-right-14 rounded-xl max-w-[220px] lg:max-w-[235px] xl:max-w-[265px]"
         />
       </div>
 
