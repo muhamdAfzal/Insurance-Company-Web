@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="py-6 text-primary">
+      <nav className="py-6 text-primary max-w-screen-2xl mx-auto md:px-14 4xl:px-0">
         <div className="text-base lg:text-2xl container mx-auto flex justify-between items-center">
           <div className="flex space-x-14 items-center">
             {/* Main Logo */}

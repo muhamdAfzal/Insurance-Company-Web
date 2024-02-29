@@ -1,5 +1,10 @@
 import Card from "./Card";
 import Heading from "./Heading";
+import serviceBg from "../assets/service-slider-bg.jpg";
+import Section from "./Section";
+
+// md:px-10 4xl:px-0
+// 4xl:gap-x-24
 
 const services = [
   {
@@ -27,24 +32,37 @@ const services = [
 
 const Service = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-y-16">
-      <div className="max-w-[650px] text-center">
-        <Heading
-          element="We are here to meet your insurance needs"
-          smallText="text-[40px]"
-          largeText="xl:text-[50px]"
-        />
-      </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10">
-        {services.map((service) => (
-          <Card
-            key={service.title}
-            title={service.title}
-            description={service.description}
-            img={service.img}
-            icon={service.icon}
+    <div className="xl:relative flex justify-center mb-[1050px] lg:mb-0">
+      <img
+        src={serviceBg}
+        alt=""
+        className="h-96 lg:h-[540px] xl:h-[710px] 4xl:h-[770px] 4xl:w-screen z-10"
+      />
+
+      <div className="absolute my-20 xl:my-32 flex flex-col justify-center items-center gap-y-4 z-20">
+        <Section bgColor="border-green" txtColor="text-green">
+          Our Services
+        </Section>
+        <div className="max-w-[650px] text-center mb-12">
+          <Heading
+            element1="We are here to meet your insurance needs"
+            color1="text-primary"
+            smallText="text-[40px]"
+            largeText="xl:text-[50px]"
           />
-        ))}
+        </div>
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 xl:gap-10 2xl:max-w-screen-2xl mx-auto px-2 md:px-14 xl:px-20 2xl:px-14 4xl:px-0">
+          {services.map((service) => (
+            <Card
+              key={service.title}
+              service={service}
+              title={service.title}
+              description={service.description}
+              img={service.img}
+              icon={service.icon}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

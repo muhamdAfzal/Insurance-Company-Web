@@ -4,14 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#12372A",
+        primary: "#003a37",
         secondary: "#436850",
         tartiary: "#607274",
-        green: "#43766C",
-        greenLite: "#85E6C5",
+        green: "#25826a",
+        greenLite: "#597f7d",
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
+      },
+      screens: {
+        "4xl": "2560px",
       },
     },
   },

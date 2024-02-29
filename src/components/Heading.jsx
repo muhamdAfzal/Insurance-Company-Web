@@ -1,9 +1,16 @@
-const Heading = ({ element, smallText, largeText }) => {
+const Heading = ({
+  element1,
+  element2,
+  color1,
+  color2,
+  smallText,
+  largeText,
+}) => {
   return (
     <h2
-      className={`${smallText} ${largeText} font-bold leading-[40px] xl:leading-[70px] text-primary`}
+      className={`${smallText} ${largeText} font-bold leading-[55px] xl:leading-[70px] ${color1}`}
     >
-      {element}
+      <span className={`${color2}`}>{element2}</span> {element1}
     </h2>
   );
 };
