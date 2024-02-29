@@ -1,5 +1,6 @@
 import promo1 from "../assets/Promo-big.png";
 import promo2 from "../assets/Promo-small.png";
+import promo3 from "../assets/Promotion-hover.png";
 import Heading from "./Heading";
 import Section from "./Section";
 import { MdOutlineDoubleArrow } from "react-icons/md";
@@ -52,6 +53,11 @@ const Promotion = () => {
             src={promo2}
             alt="promo.img-small"
             className="hidden md:block md:absolute md:-bottom-36 md:-left-6 lg:-bottom-48 lg:-left-10 xl:-bottom-36 xl:-left-24 2xl:-bottom-24 z-20"
+          />
+          <img
+            src={promo3}
+            alt=""
+            className="absolute -bottom-16 md:-bottom-24 md:left-96 lg:left-72 2xl:left-96 z-30"
           />
         </div>
       </div>
