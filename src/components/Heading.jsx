@@ -1,7 +1,7 @@
 const Heading = ({
   element1,
   element2,
-  color1,
+  color1 = "text-primary",
   color2,
   smallText,
   largeText,

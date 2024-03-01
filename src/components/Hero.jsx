@@ -2,8 +2,9 @@ import banner from "../assets/banner.jpg";
 import Button from "./Button";
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
-import Section from "./Section";
+
 import { GiTrophy } from "react-icons/gi";
+import Title from "./Title";
 
 // px-5 md:px-0 lg:pl-60
 // max-w-[550px] xl:max-w-[620px]
@@ -16,14 +17,13 @@ const Hero = () => {
 
       {/* Hero Text & Button*/}
       <div className="lg:absolute flex flex-col items-center md:items-start gap-6 xl:gap-10 md:ml-14 xl:ml-20 2xl:ml-60 4xl:mx-auto text-center md:text-start max-w-[550px] xl:max-w-[620px]">
-        <Section bgColor="border-green" txtColor="text-green">
+        <Title>
           <GiTrophy />
           Award Winning Insurance Company
-        </Section>
+        </Title>
 
         <Heading
           element1="We Ensure The Best Insurance Service"
-          color1="text-primary"
           smallText="text-[50px]"
           largeText="xl:text-[66px]"
         />

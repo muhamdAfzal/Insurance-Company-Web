@@ -1,7 +1,7 @@
 import Card from "./Card";
 import Heading from "./Heading";
 import serviceBg from "../assets/service-slider-bg.jpg";
-import Section from "./Section";
+import Title from "./Title";
 
 // md:px-10 4xl:px-0
 // 4xl:gap-x-24
@@ -40,27 +40,17 @@ const Service = () => {
       />
 
       <div className="absolute my-20 xl:my-32 flex flex-col justify-center items-center gap-y-4 z-20">
-        <Section bgColor="border-green" txtColor="text-green">
-          Our Services
-        </Section>
+        <Title>Our Services</Title>
         <div className="max-w-[650px] text-center mb-12">
           <Heading
             element1="We are here to meet your insurance needs"
-            color1="text-primary"
             smallText="text-[40px]"
             largeText="xl:text-[50px]"
           />
         </div>
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 xl:gap-10 2xl:max-w-screen-2xl mx-auto px-2 md:px-14 xl:px-20 2xl:px-14 4xl:px-0">
           {services.map((service) => (
-            <Card
-              key={service.title}
-              service={service}
-              title={service.title}
-              description={service.description}
-              img={service.img}
-              icon={service.icon}
-            />
+            <Card key={service.title} service={service} />
           ))}
         </div>
       </div>

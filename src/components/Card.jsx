@@ -21,7 +21,6 @@ const Card = ({ service }) => {
       <div className="py-8 px-10">
         <Heading
           element1={title}
-          color1="text-primary"
           smallText="text-[25px]"
           largeText="xl:text-[32px]"
         />

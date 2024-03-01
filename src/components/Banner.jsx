@@ -31,23 +31,23 @@ const Banner = () => {
           </div>
           <div className="flex flex-col gap-y-4">
             <h3 className="text-2xl font-bold">More Coverage</h3>
-            <p className="text-[20px]">
-              Insurigo covers 12,600+ injuries and illness from concussions to
-              cancer
-            </p>
-            {/* <Paragraph element="Insurigo covers 12,600+ injuries and illness from concussions to cancer" /> */}
+            <Paragraph
+              element="Insurigo covers 12,600+ injuries and illness from concussions to cancer"
+              color="text-white"
+            />
           </div>
         </div>
-        <div className="flex flex-row gap-x-4 p-5 md:px-14 lg:px-10 md:py-0 bg-greenAlternative">
-          <div className="text-yellow-400 my-10 text-3xl">
+        <div className="flex flex-row gap-x-4 p-5 md:px-14 lg:px-10 bg-greenAlternative">
+          <div className="text-yellow-400 my-1 lg:my-5 xl:my-1 2xl:my-5 text-3xl">
             <GiCheckMark />
           </div>
           <div className="flex flex-col justify-center gap-y-4">
             <h3 className="text-2xl font-bold">Less Hassle</h3>
-            <p className="text-[20px]">
-              One easy-to-manage plan with paperless instant and online admin
-              tools
-            </p>
+            <Paragraph
+              element="One easy-to-manage plan with paperless instant and online admin
+              tools"
+              color="text-white"
+            />
           </div>
         </div>
         <div className="flex flex-row gap-x-4 my-10 px-4 md:px-14 lg:px-10">
@@ -56,9 +56,10 @@ const Banner = () => {
           </div>
           <div className="flex flex-col gap-y-4">
             <h3 className="text-2xl font-bold">Faster Benefits</h3>
-            <p className="text-[20px]">
-              Insurigo pays claims in hours, not weeks. So people can rest easy
-            </p>
+            <Paragraph
+              element="Insurigo pays claims in hours, not weeks. So people can rest easy"
+              color="text-white"
+            />
           </div>
         </div>
       </div>

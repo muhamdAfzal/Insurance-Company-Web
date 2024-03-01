@@ -2,8 +2,8 @@ import promo1 from "../assets/Promo-big.png";
 import promo2 from "../assets/Promo-small.png";
 import promo3 from "../assets/Promotion-hover.png";
 import Heading from "./Heading";
-import Section from "./Section";
 import { MdOutlineDoubleArrow } from "react-icons/md";
+import Title from "./Title";
 
 const features = [
   {
@@ -22,13 +22,13 @@ const features = [
 
 const Promotion = () => {
   return (
-    <div className="bg-primary mt-[1600px] md:my-[450px] py-36">
+    <div className="bg-primary mt-[1600px] md:mt-[450px] mb-24 md:mb-44 py-36">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-y-28 gap-x-20 xl:gap-x-40 4xl:gap-x-44 max-w-screen-2xl mx-auto md:px-14 xl:px-20 2xl:px-14 4xl:px-0">
         {/* Promotion Contents */}
         <div className="flex flex-col items-center md:items-start text-center md:text-start gap-6 xl:gap-7 md:mt-32 lg:mt-0 lg:max-w-[400px] xl:max-w-[650px]">
-          <Section bgColor="border-white" txtColor="text-white">
+          <Title bgColor="border-white" txtColor="text-white">
             Why Choose Insurigo
-          </Section>
+          </Title>
 
           <Heading
             element2="Our insurance platforms provide seamless integration"
