@@ -15,11 +15,7 @@ const Testimonials = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-32 max-w-screen-2xl mx-auto my-28 px-14 4xl:px-0">
       <div className="col-span-1 flex flex-col items-start space-y-5">
         <Title>Testimonials</Title>
-        <Heading
-          element1="Read our success story to find the happiness"
-          smallText="text-[40px]"
-          largeText="xl:text-[50px]"
-        />
+        <Heading element1="Read our success story to find the happiness" />
         <Paragraph element="Our company has been operating for more than 30 years and has been growing exponentially" />
 
         {/* Ratings */}
@@ -36,7 +32,7 @@ const Testimonials = () => {
             </div>
           </div>
           <div>
-            <img src={googleRating} alt="" />
+            <img src={googleRating} alt="Google Rating" />
           </div>
         </div>
       </div>
@@ -68,10 +64,10 @@ const Testimonials = () => {
           Our Worldwide Partners
         </h4>
         <div className="row-span-4 lg:col-span-3 flex flex-col lg:flex-row space-y-8 lg:space-y-0 items-center justify-between">
-          <img src={partner1} alt="" />
-          <img src={partner2} alt="" />
-          <img src={partner3} alt="" />
-          <img src={partner4} alt="" />
+          <img src={partner1} alt="Spectranet" />
+          <img src={partner2} alt="Disrupt" />
+          <img src={partner3} alt="Air Peace" />
+          <img src={partner4} alt="Transit" />
         </div>
       </div>
     </div>

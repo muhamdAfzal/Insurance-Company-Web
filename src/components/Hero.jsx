@@ -13,7 +13,7 @@ const Hero = () => {
   return (
     <div className="relative flex lg:flex-row lg:items-center my-4 lg:my-0 4xl:max-w-screen-2xl mx-auto">
       {/* Hero banner image */}
-      <img src={banner} alt="hero image" className="hidden lg:flex" />
+      <img src={banner} alt="hero image" className="hidden lg:block" />
 
       {/* Hero Text & Button*/}
       <div className="lg:absolute flex flex-col items-center md:items-start gap-6 xl:gap-10 md:ml-14 xl:ml-20 2xl:ml-60 4xl:mx-auto text-center md:text-start max-w-[550px] xl:max-w-[620px]">

@@ -32,11 +32,7 @@ const About = () => {
       {/* About Contents */}
       <div className="flex flex-col items-center md:items-start text-center md:text-start px-5 md:px-0 gap-6 xl:gap-7 max-w-[400px] xl:max-w-[750px]">
         <Title>About Us</Title>
-        <Heading
-          element1="Save 50% on your life insurance policy right now"
-          smallText="text-[40px]"
-          largeText="xl:text-[50px]"
-        />
+        <Heading element1="Save 50% on your life insurance policy right now" />
 
         <Paragraph element="Insurigo agency is a business or organization that acts as an intermediary between insurance providers (insurance companies) and individuals or businesses seeking insurance coverage. These agencies play a crucial role in the insurance industry by helping customers find suitable insurance policies to protect themselves or their assets against various risks, such as accidents, illness, property damage, liability, and more." />
 

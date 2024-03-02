@@ -3,8 +3,8 @@ const Heading = ({
   element2,
   color1 = "text-primary",
   color2,
-  smallText,
-  largeText,
+  smallText = "text-[40px]",
+  largeText = "xl:text-[50px]",
 }) => {
   return (
     <h2
