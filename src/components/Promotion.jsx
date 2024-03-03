@@ -5,6 +5,8 @@ import Heading from "./Heading";
 import { MdOutlineDoubleArrow } from "react-icons/md";
 import Title from "./Title";
 
+// mb-24 md:mb-44
+
 const features = [
   {
     title: "Get paid up to 2 days faster",
@@ -22,7 +24,7 @@ const features = [
 
 const Promotion = () => {
   return (
-    <div className="bg-primary mt-[1600px] md:mt-[450px] mb-24 md:mb-44 py-36">
+    <div className="bg-primary mt-[1600px] md:mt-[425px] lg:mb-[220px] xl:my-[320px] 2xl:my-[425px] 4xl:my-[570px] py-36">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-y-28 gap-x-20 xl:gap-x-40 4xl:gap-x-44 max-w-screen-2xl mx-auto md:px-14 xl:px-20 2xl:px-14 4xl:px-0">
         {/* Promotion Contents */}
         <div className="flex flex-col items-center md:items-start text-center md:text-start gap-6 xl:gap-7 md:mt-32 lg:mt-0 lg:max-w-[400px] xl:max-w-[650px]">
@@ -69,7 +71,6 @@ const Feature = ({ title }) => {
   return (
     <div className="flex flex-row gap-x-2">
       <div className="text-2xl text-yellow-400">
-        {/* <PiArrowBendDoubleUpRightBold /> */}
         <MdOutlineDoubleArrow />
       </div>
       <p className="text-lg font-semibold text-white">{title}</p>

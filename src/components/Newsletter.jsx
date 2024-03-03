@@ -24,7 +24,7 @@ const Newsletter = () => {
         </div>
         <div className="flex flex-col space-y-5 lg:space-y-10 items-center md:items-start">
           {/* Email Input & Button */}
-          <div className="flex flex-row items-center justify-between max-w-[500px] p-4 rounded-xl bg-white">
+          <div className="flex flex-row items-center justify-between max-w-[500px] space-x-5 p-4 rounded-xl bg-white">
             <input
               type="text"
               placeholder="Enter your email address"
