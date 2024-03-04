@@ -13,6 +13,7 @@ const Navbar = () => {
   const navItems = [
     { link: "Home", path: "/" },
     { link: "Services", path: "services" },
+    { link: "Testimonials", path: "testimonial" },
     { link: "About Us", path: "about" },
     { link: "Contact Us", path: "contact" },
   ];
@@ -21,7 +22,7 @@ const Navbar = () => {
     <>
       <nav className="py-6 text-primary max-w-screen-2xl mx-auto md:px-14 4xl:px-0">
         <div className="text-base lg:text-2xl container mx-auto flex justify-between items-center">
-          <div className="flex space-x-14 items-center">
+          <div className="flex space-x-8 xl:space-x-14 items-center">
             {/* Main Logo */}
             <a href="/">
               <img
@@ -32,7 +33,7 @@ const Navbar = () => {
             </a>
 
             {/* Navbar Menus */}
-            <ul className="lg:flex space-x-6 lg:space-x-10 hidden">
+            <ul className="hidden lg:flex text-xl xl:text-2xl space-x-6 xl:space-x-10">
               {navItems.map(({ link, path }) => (
                 <a
                   key={link}
@@ -74,7 +75,7 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-7">
           {navItems.map(({ link, path }) => (
-            <a key={link} href={path} className="">
+            <a key={link} href={path}>
               {link}
             </a>
           ))}

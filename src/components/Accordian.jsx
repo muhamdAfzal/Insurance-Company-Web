@@ -18,7 +18,7 @@ const Accordian = ({ question, id, isOpen, onOpen, children }) => {
         className="flex flex-row items-center justify-between hover:cursor-pointer"
         onClick={handleToggle}
       >
-        <div className="flex flex-row md:items-center space-x-3">
+        <div className="flex flex-row md:items-center space-x-3 capitalize">
           <div className="text-3xl pt-3 md:pt-0 text-green">
             <FaQuestionCircle />
           </div>

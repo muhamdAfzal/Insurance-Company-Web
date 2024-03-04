@@ -28,7 +28,7 @@ const Newsletter = () => {
             <input
               type="text"
               placeholder="Enter your email address"
-              className="w-48"
+              className="w-48 p-2"
             />
             <Button element="Subscribe Now" />
           </div>
