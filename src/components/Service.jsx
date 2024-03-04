@@ -2,35 +2,38 @@ import Card from "./Card";
 import Heading from "./Heading";
 import serviceBg from "../assets/service-slider-bg.jpg";
 import Title from "./Title";
-
-// md:px-10 4xl:px-0
-// 4xl:gap-x-24
-
-const services = [
-  {
-    title: "Car Insurance",
-    description:
-      "This insurance provides protection and benefits to a car owner and intended to address risks.",
-    img: "https://demo.rstheme.com/html/insurigo/assets/images/service-thumb-5.jpg",
-    icon: "https://cdn4.iconfinder.com/data/icons/insurance-85/32/Artboard_6-512.png",
-  },
-  {
-    title: "Health Insurance",
-    description:
-      "This insurance provides protection and benefits to an entire familys health and intended to address risks.",
-    img: "https://demo.rstheme.com/html/insurigo/assets/images/service-thumb-1.jpg",
-    icon: "https://cdn0.iconfinder.com/data/icons/insurance-line-unexpected-situations/512/Insurance-512.png",
-  },
-  {
-    title: "Business Insurance",
-    description:
-      "This insurance provides protection and benefits to a business owner and intended to address risks.",
-    img: "https://demo.rstheme.com/html/insurigo/assets/images/service-thumb-3.jpg",
-    icon: "https://cdn2.iconfinder.com/data/icons/thin-business-1/24/thin-1089_deal_money_business-2-512.png",
-  },
-];
+import { useEffect, useState } from "react";
+import Loader from "./Loader";
+import ErrorMessage from "./ErrorMessage";
 
 const Service = () => {
+  const [services, setServices] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(function () {
+    async function fetchData() {
+      try {
+        setIsLoading(true);
+        const res = await fetch("../data.json");
+
+        if (!res.ok)
+          throw new Error(
+            "Error!! Something went wrong while fetching data!!!"
+          );
+
+        const data = await res.json();
+        setServices(data);
+      } catch (err) {
+        console.error(err.message);
+        setError(err.message);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    fetchData();
+  }, []);
+
   return (
     <div className="xl:relative flex justify-center mb-[1050px] lg:mb-0">
       <img
@@ -44,10 +47,22 @@ const Service = () => {
         <div className="max-w-[650px] text-center mb-12">
           <Heading element1="We are here to meet your insurance needs" />
         </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 xl:gap-10 2xl:max-w-screen-2xl mx-auto px-2 md:px-14 xl:px-20 2xl:px-14 4xl:px-0">
-          {services.map((service) => (
-            <Card key={service.title} service={service} />
-          ))}
+        <div
+          className={
+            !isLoading && !error
+              ? "grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 xl:gap-10 2xl:max-w-screen-2xl mx-auto px-2 md:px-14 xl:px-20 2xl:px-14 4xl:px-0"
+              : "p-4 max-w-sm w-full mx-auto"
+          }
+        >
+          {isLoading && <Loader />}
+
+          {error && <ErrorMessage message={error} />}
+
+          {!isLoading &&
+            !error &&
+            services.map((service) => (
+              <Card key={service.title} service={service} />
+            ))}
         </div>
       </div>
     </div>

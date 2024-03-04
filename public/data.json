@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Car Insurance",
+    "description": "This insurance provides protection and benefits to a car owner and intended to address risks.",
+    "img": "https://demo.rstheme.com/html/insurigo/assets/images/service-thumb-5.jpg",
+    "icon": "https://cdn4.iconfinder.com/data/icons/insurance-85/32/Artboard_6-512.png"
+  },
+  {
+    "title": "Health Insurance",
+    "description": "This insurance provides protection and benefits to an entire familys health and intended to address risks.",
+    "img": "https://demo.rstheme.com/html/insurigo/assets/images/service-thumb-1.jpg",
+    "icon": "https://cdn0.iconfinder.com/data/icons/insurance-line-unexpected-situations/512/Insurance-512.png"
+  },
+  {
+    "title": "Business Insurance",
+    "description": "This insurance provides protection and benefits to a business owner and intended to address risks.",
+    "img": "https://demo.rstheme.com/html/insurigo/assets/images/service-thumb-3.jpg",
+    "icon": "https://cdn2.iconfinder.com/data/icons/thin-business-1/24/thin-1089_deal_money_business-2-512.png"
+  }
+]
