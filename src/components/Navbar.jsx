@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 import { CgMenuGridO, CgMenuGridR } from "react-icons/cg";
 import Button from "./Button";
 
-const Navbar = () => {
+const Navbar = ({ onToggle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // const toogleMenu = () => {
@@ -12,10 +12,10 @@ const Navbar = () => {
 
   const navItems = [
     { link: "Home", path: "/" },
-    { link: "Services", path: "services" },
-    { link: "Testimonials", path: "testimonial" },
-    { link: "About Us", path: "about" },
-    { link: "Contact Us", path: "contact" },
+    { link: "Services", path: "/" },
+    { link: "Testimonials", path: "/" },
+    { link: "About Us", path: "/" },
+    { link: "Contact Us", path: "/" },
   ];
 
   return (
@@ -39,6 +39,7 @@ const Navbar = () => {
                   key={link}
                   href={path}
                   className="block hover:text-green transition-colors duration-300"
+                  onClick={link === "Contact Us" && ((e) => onToggle(e))}
                 >
                   {link}
                 </a>
@@ -48,7 +49,7 @@ const Navbar = () => {
 
           {/* Button */}
           <div className="hidden lg:flex">
-            <Button text={"Contact Us"} />
+            <Button text={"Contact Us"} onClick={(e) => onToggle(e)} />
           </div>
 
           {/* Menu Burger Btn */}
@@ -75,14 +76,18 @@ const Navbar = () => {
       >
         <div className="flex flex-col space-y-7">
           {navItems.map(({ link, path }) => (
-            <a key={link} href={path}>
+            <a
+              key={link}
+              href={path}
+              onClick={link === "Contact Us" && ((e) => onToggle(e))}
+            >
               {link}
             </a>
           ))}
         </div>
 
         <div className="lg:hidden">
-          <Button text={"Contact Us"} />
+          <Button text={"Contact Us"} onClick={onToggle} />
         </div>
       </div>
     </>

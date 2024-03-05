@@ -7,10 +7,10 @@ import Qna from "./Qna";
 import Service from "./Service";
 import Testimonials from "./Testimonials";
 
-const Home = () => {
+const Home = ({ onToggle }) => {
   return (
     <>
-      <Hero />
+      <Hero onToggle={onToggle} />
       <Banner />
       <About />
       <Service />

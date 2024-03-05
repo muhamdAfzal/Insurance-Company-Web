@@ -14,10 +14,10 @@ import { RiMailSendFill } from "react-icons/ri";
 
 const quickLinks = [
   { link: "Home", path: "/" },
-  { link: "Services", path: "services" },
-  { link: "Testimonials", path: "testimonial" },
-  { link: "About Us", path: "about" },
-  { link: "Contact Us", path: "contact" },
+  { link: "Services", path: "/" },
+  { link: "Testimonials", path: "/" },
+  { link: "About Us", path: "/" },
+  { link: "Contact Us", path: "/" },
 ];
 
 const services = [
@@ -28,7 +28,7 @@ const services = [
   { title: "Business Insurance" },
 ];
 
-const Footer = () => {
+const Footer = ({ onToggle }) => {
   return (
     <footer className="lg:relative flex justify-center items-center py-10 md:pb-0 md:pt-20 lg:pt-[190px] xl:pt-[270px] 4xl:pt-[360px] bg-[#003b37] lg:bg-transparent">
       <img
@@ -76,6 +76,7 @@ const Footer = () => {
                 key={link}
                 href={path}
                 className="hover:text-green transition-colors duration-500"
+                onClick={link === "Contact Us" && ((e) => onToggle(e))}
               >
                 {link}
               </a>

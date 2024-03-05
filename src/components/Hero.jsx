@@ -2,14 +2,10 @@ import banner from "../assets/banner.jpg";
 import Button from "./Button";
 import Heading from "./Heading";
 import Paragraph from "./Paragraph";
-
 import { GiTrophy } from "react-icons/gi";
 import Title from "./Title";
 
-// px-5 md:px-0 lg:pl-60
-// max-w-[550px] xl:max-w-[620px]
-
-const Hero = () => {
+const Hero = ({ onToggle }) => {
   return (
     <div className="relative flex lg:flex-row lg:items-center my-4 lg:my-0 4xl:max-w-screen-2xl mx-auto">
       {/* Hero banner image */}
@@ -28,7 +24,7 @@ const Hero = () => {
           largeText="xl:text-[66px]"
         />
         <Paragraph text="Only our company help individuals and businesses manage risks and protect their financial well-being without any extra cost." />
-        <Button text="Contact Us" />
+        <Button text="Contact Us" onClick={(e) => onToggle(e)} />
       </div>
     </div>
   );
