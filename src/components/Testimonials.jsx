@@ -17,8 +17,8 @@ const Testimonials = () => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-32 max-w-screen-2xl mx-auto xl:mt-[450px] 2xl:mt-[550px] 4xl:mt-[700px] lg:mb-36 px-14 4xl:px-0 py-24 lg:py-0">
       <div className="col-span-1 flex flex-col items-start space-y-5">
         <Title>Testimonials</Title>
-        <Heading element1="Read our success story to find the happiness" />
-        <Paragraph element="Our company has been operating for more than 30 years and has been growing exponentially" />
+        <Heading text1="Read our success story to find the happiness" />
+        <Paragraph text="Our company has been operating for more than 30 years and has been growing exponentially" />
 
         {/* Ratings */}
         <div className="flex flex-col md:flex-row lg:flex-col xl:flex-row gap-x-10 items-center">

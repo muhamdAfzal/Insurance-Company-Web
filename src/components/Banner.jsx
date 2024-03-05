@@ -3,24 +3,6 @@ import { FaUmbrella } from "react-icons/fa";
 import { GiCheckMark } from "react-icons/gi";
 import { GiWallet } from "react-icons/gi";
 
-const info = [
-  {
-    title: "More Coverage",
-    description:
-      "Insurigo covers 12,600+ injuries and illness from concussions to cancer",
-  },
-  {
-    title: "Less Hassle",
-    description:
-      "One easy-to-manage plan with paperless instant and online admin tools",
-  },
-  {
-    title: "Faster Benefits",
-    description:
-      "Insurigo pays claims in hours, not weeks.So people can rest easy",
-  },
-];
-
 const Banner = () => {
   return (
     <div className="bg-primary text-white">
@@ -32,7 +14,7 @@ const Banner = () => {
           <div className="flex flex-col gap-y-4">
             <h3 className="text-2xl font-bold">More Coverage</h3>
             <Paragraph
-              element="Insurigo covers 12,600+ injuries and illness from concussions to cancer"
+              text="Insurigo covers 12,600+ injuries and illness from concussions to cancer"
               color="text-white"
             />
           </div>
@@ -44,7 +26,7 @@ const Banner = () => {
           <div className="flex flex-col justify-center gap-y-4">
             <h3 className="text-2xl font-bold">Less Hassle</h3>
             <Paragraph
-              element="One easy-to-manage plan with paperless instant and online admin
+              text="One easy-to-manage plan with paperless instant and online admin
               tools"
               color="text-white"
             />
@@ -57,7 +39,7 @@ const Banner = () => {
           <div className="flex flex-col gap-y-4">
             <h3 className="text-2xl font-bold">Faster Benefits</h3>
             <Paragraph
-              element="Insurigo pays claims in hours, not weeks. So people can rest easy"
+              text="Insurigo pays claims in hours, not weeks. So people can rest easy"
               color="text-white"
             />
           </div>

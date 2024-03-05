@@ -19,8 +19,8 @@ const Newsletter = () => {
       <div className="lg:absolute flex flex-col lg:flex-row justify-between space-y-5 w-screen max-w-screen-2xl px-14 4xl:px-0">
         <div className="flex flex-col items-center md:items-start space-y-3 text-center md:text-start">
           <Title>Newsletter</Title>
-          <Heading element1="Get Daily Insurance News" />
-          <Paragraph element="Get instant news by subscribe to our daily newsletter" />
+          <Heading text1="Get Daily Insurance News" />
+          <Paragraph text="Get instant news by subscribe to our daily newsletter" />
         </div>
         <div className="flex flex-col space-y-5 lg:space-y-10 items-center md:items-start">
           {/* Email Input & Button */}
@@ -30,7 +30,7 @@ const Newsletter = () => {
               placeholder="Enter your email address"
               className="w-48 p-2"
             />
-            <Button element="Subscribe Now" />
+            <Button text="Subscribe Now" />
           </div>
           <div>
             <img src={imgLine} alt="" />

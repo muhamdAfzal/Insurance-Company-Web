@@ -48,7 +48,7 @@ const Navbar = () => {
 
           {/* Button */}
           <div className="hidden lg:flex">
-            <Button element={"Contact Us"} />
+            <Button text={"Contact Us"} />
           </div>
 
           {/* Menu Burger Btn */}
@@ -82,7 +82,7 @@ const Navbar = () => {
         </div>
 
         <div className="lg:hidden">
-          <Button element={"Contact Us"} />
+          <Button text={"Contact Us"} />
         </div>
       </div>
     </>

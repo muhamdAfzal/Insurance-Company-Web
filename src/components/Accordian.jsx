@@ -23,7 +23,7 @@ const Accordian = ({ question, id, isOpen, onOpen, children }) => {
             <FaQuestionCircle />
           </div>
           <Heading
-            element1={question}
+            text1={question}
             smallText="text-[22px]"
             largeText="xl:text-[25px]"
             color1={nowOpen && "text-green"}
@@ -40,7 +40,7 @@ const Accordian = ({ question, id, isOpen, onOpen, children }) => {
       {nowOpen && (
         <div className="space-y-3 lg:space-y-1 xl:space-y-3 ">
           <hr className="h-[1.4px] bg-green" />
-          <Paragraph element={children} />
+          <Paragraph text={children} />
         </div>
       )}
     </div>

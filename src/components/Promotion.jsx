@@ -33,8 +33,8 @@ const Promotion = () => {
           </Title>
 
           <Heading
-            element2="Our insurance platforms provide seamless integration"
-            element1="of systems and fast on-boarding of insurance programs, enabled by our advanced technology platform."
+            text2="Our insurance platforms provide seamless integration"
+            text1="of systems and fast on-boarding of insurance programs, enabled by our advanced technology platform."
             color2="text-white"
             color1="text-greenLite"
             smallText="text-[40px]"

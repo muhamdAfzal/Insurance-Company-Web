@@ -45,13 +45,13 @@ const Service = () => {
       <div className="absolute my-20 xl:my-32 flex flex-col justify-center items-center gap-y-4 z-20">
         <Title>Our Services</Title>
         <div className="max-w-[650px] text-center mb-12">
-          <Heading element1="We are here to meet your insurance needs" />
+          <Heading text1="We are here to meet your insurance needs" />
         </div>
         <div
           className={
             !isLoading && !error
               ? "grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 xl:gap-10 2xl:max-w-screen-2xl mx-auto px-2 md:px-14 xl:px-20 2xl:px-14 4xl:px-0"
-              : "p-4 max-w-sm w-full mx-auto"
+              : "max-w-md w-full mx-auto"
           }
         >
           {isLoading && <Loader />}

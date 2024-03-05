@@ -35,11 +35,10 @@ const Qna = () => {
       <img src={qnaBg} alt="" className="hidden lg:block absolute w-full" />
 
       {/* Contents */}
-
       <div className="lg:absolute flex flex-col space-y-5 lg:space-y-1 xl:space-y-3 2xl:space-y-6 md:ml-14 xl:ml-20 2xl:ml-60 4xl:ml-[510px] items-center md:items-start text-center md:text-start max-w-[400px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[800px]">
         <Title>Find The Right Insurance</Title>
         <Heading
-          element1="We're here to assist you with exploring protection"
+          text1="We're here to assist you with exploring protection"
           smallText="text-[38px]"
         />
         <div className="space-y-4 lg:space-y-1 xl:space-y-3 2xl:space-y-7 px-2">
@@ -59,48 +58,5 @@ const Qna = () => {
     </div>
   );
 };
-
-// const QnaAccordianItem = ({ question, id, isOpen, onOpen, children }) => {
-//   // const [isOpen, setIsOpen] = useState(false);
-//   const nowOpen = id === isOpen;
-
-//   function handleToggle() {
-//     // setIsOpen((isOpen) => !isOpen);
-//     onOpen(nowOpen ? null : id);
-//   }
-
-//   return (
-//     <div className="px-5 py-2 space-y-3 rounded-lg bg-[#e0ebea]">
-//       {/* Accordian Question */}
-//       <div
-//         className="flex flex-row items-center space-x-3 hover:cursor-pointer"
-//         onClick={handleToggle}
-//       >
-//         <div className="text-3xl text-green">
-//           <FaQuestionCircle />
-//         </div>
-//         <Heading
-//           element1={question}
-//           smallText="text-[23px]"
-//           largeText="xl:text-[25px]"
-//           color1={nowOpen && "text-green"}
-//         />
-//         <div
-//           className={`text-[22px] ${nowOpen ? "text-green" : "text-primary"}`}
-//         >
-//           {nowOpen ? <MdOutlineCloseFullscreen /> : <MdOutlineOpenInFull />}
-//         </div>
-
-//         {/* Accordian Answer */}
-//       </div>
-//       {nowOpen && (
-//         <div className="space-y-3">
-//           <hr className="h-[1.2px] bg-green" />
-//           <Paragraph element={children} />
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
 
 export default Qna;

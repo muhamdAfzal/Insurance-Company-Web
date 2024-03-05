@@ -20,11 +20,11 @@ const Card = ({ service }) => {
       </div>
       <div className="py-8 px-10">
         <Heading
-          element1={title}
+          text1={title}
           smallText="text-[25px]"
           largeText="xl:text-[32px]"
         />
-        <Paragraph element={description} />
+        <Paragraph text={description} />
       </div>
     </div>
   );

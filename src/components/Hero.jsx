@@ -23,24 +23,13 @@ const Hero = () => {
         </Title>
 
         <Heading
-          element1="We Ensure The Best Insurance Service"
+          text1="We Ensure The Best Insurance Service"
           smallText="text-[50px]"
           largeText="xl:text-[66px]"
         />
-        <Paragraph element="Only our company help individuals and businesses manage risks and protect their financial well-being without any extra cost." />
-        <Button element="Contact Us" />
+        <Paragraph text="Only our company help individuals and businesses manage risks and protect their financial well-being without any extra cost." />
+        <Button text="Contact Us" />
       </div>
-
-      {/* <div className="lg:absolute flex flex-col items-center md:items-start gap-7 xl:gap-10 px-5 md:px-0 text-center md:text-start max-w-[550px] xl:max-w-[620px]">
-        <Heading
-          element="We Ensure The Best Insurance Service"
-          smallText="text-[50px]"
-          largeText="xl:text-[66px]"
-        />
-        <Paragraph element="Only our company help individuals and businesses manage risks and protect their financial well-being without any extra cost." />
-
-        <Button element="Contact Us" />
-      </div> */}
     </div>
   );
 };

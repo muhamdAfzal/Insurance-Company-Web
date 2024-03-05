@@ -43,7 +43,7 @@ const Footer = () => {
             <img src={logo} alt="Insurigo_Logo" className="w-48 xl:w-56" />
           </a>
           <Paragraph
-            element="Insurigo is a renowned insurance company established in 2003 and serving customers for over 20 years"
+            text="Insurigo is a renowned insurance company established in 2003 and serving customers for over 20 years"
             color="text-white"
           />
           <div className="flex flex-row gap-x-5 text-2xl">
@@ -65,7 +65,7 @@ const Footer = () => {
         {/* Quick Links */}
         <div>
           <Heading
-            element1="Quick Link"
+            text1="Quick Link"
             color1="text-white"
             smallText="text-[20px]"
             largeText="xl:text-[23px]"
@@ -86,7 +86,7 @@ const Footer = () => {
         {/* Our Services */}
         <div>
           <Heading
-            element1="Our Services"
+            text1="Our Services"
             color1="text-white"
             smallText="text-[20px]"
             largeText="xl:text-[23px]"
@@ -101,7 +101,7 @@ const Footer = () => {
         {/* Get in touches */}
         <div className="flex flex-col items-center md:items-start">
           <Heading
-            element1="Get In Touch"
+            text1="Get In Touch"
             color1="text-white"
             smallText="text-[20px]"
             largeText="xl:text-[23px]"
