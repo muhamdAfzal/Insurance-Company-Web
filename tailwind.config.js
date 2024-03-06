@@ -10,6 +10,7 @@ export default {
         green: "#25826a",
         greenLite: "#597f7d",
         greenAlternative: "#184d46",
+        overlayBg: "rgba(0, 0, 0, 0.6)",
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
