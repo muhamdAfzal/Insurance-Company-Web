@@ -20,4 +20,4 @@ This single page webpage is a insurance company website. Some of its best featur
 - [TailwindCSS](https://getbootstrap.com/) A utility-first CSS framework packed with classes and feature-packed frontend toolkit.
 - [React Icons](https://react-icons.github.io/react-icons/) for some varities of icons.
 
-Live site link: https://fastidious-platypus-b17715.netlify.app/
+Live site link: https://insurigo-insurance.netlify.app/
