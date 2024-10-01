@@ -16,8 +16,8 @@ This single page webpage is a insurance company website. Some of its best featur
 ## Frontend
 
 - [React Dom](https://react.dev/) for frontend user interfaces.
-- [React Vite](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)
-- [TailwindCSS](https://getbootstrap.com/) A utility-first CSS framework packed with classes and feature-packed frontend toolkit.
-- [React Icons](https://react-icons.github.io/react-icons/) for some varities of icons.
+- [React Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/) A utility-first CSS framework packed with classes and feature-packed frontend toolkit.
+- [React Icons](https://react-icons.github.io/react-icons/) for some varieties of icons.
 
-Live site link: https://fastidious-platypus-b17715.netlify.app/
+Live site link: https://insurigo-insurance.netlify.app/
